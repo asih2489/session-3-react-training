@@ -6,6 +6,9 @@ Rules:
 - 1 session buat 1 folder dengan nama yang sama dengan nama branch
 - Agar berkesinambungan, session berikutnya harus create new branch dari session sebelumnya
 
+## Material
+https://drive.google.com/drive/folders/16J2gn3ivesGfOMMgDGSlAq-o0Rb50dUu?usp=sharing
+
 ## Syllabus
 | Course                       | Materi                    | Sub Materi                                                                                   | Learning Outcomes                                                                                               | Session |
 |------------------------------|---------------------------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------|
