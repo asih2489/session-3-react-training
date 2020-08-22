@@ -2,7 +2,9 @@ import React, { Context } from 'react'
 import Header from './Header';
 import Content from './Content';
 import { Provider, Theme } from '../state';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import List from './List';
+
 
 const Footer = () => {
     const theme = React.useContext(Theme);
@@ -16,6 +18,8 @@ const HomePage = () => {
         color: 'red'
     });
 
+    const dispatch = useDispatch();
+
     const data = useSelector((state) => state.home);
 
     return (
@@ -25,8 +29,10 @@ const HomePage = () => {
                 data: data,
             }}>
                 <div>
+                    {data.label}
                     <Header theme={theme} />
                     <Content />
+                    <List data={data.category} />
                 </div>
             </Provider>
         <Footer />

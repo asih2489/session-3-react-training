@@ -30,12 +30,27 @@ const defaultState = {
           "__typename": "CategoryTree"
         }
       ],
+    label: '',
 };
 
 const homeReducer = (state = defaultState, action) => {
-    switch (action.type) {
+    const { type, payload } = action
+    switch (type) {
         case 'GET_COLOR':
             return state.color;
+        case 'ADD_CATEGORY': 
+          return {
+            ...state,
+            category: [
+              ...state.category,
+              payload,
+            ]
+          }
+        case  'UPDATE_LABEL': 
+          return {
+            ...state,
+            label: 'HELLO WORLD'
+          }
         default:
             return state;
     }
