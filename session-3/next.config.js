@@ -3,5 +3,5 @@ module.exports = {
     customKey: "my-value",
     PORT: 3001
   },
-  trailingSlash: true,
+  trailingSlash: false,
 };

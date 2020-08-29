@@ -2,7 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
-export default function Home(props) {
+const Home = (props) => { 
+  console.log(props);
   return (
     <div className={styles.container}>
       <Head>
@@ -66,7 +67,14 @@ export default function Home(props) {
             <a>Read State Apollo</a>
           </Link>
         </li>
+        <li>
+          <Link href="/redux">
+            <a>Redux Example</a>
+          </Link>
+        </li>
       </ul>
     </div>
   );
 }
+
+export default Home;
